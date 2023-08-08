@@ -1,0 +1,30 @@
+{
+  "name": "@btyx/rpc-mini",
+  "version": "1.0.3",
+  "description": "RPC client for miniprogram, use wx.request(text base64) or cloud function",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest --coverage --ci --reporters=default --reporters=jest-junit --detectOpenHandles",
+    "prebuild": "prettier --write \"src/**/*.*s\"",
+    "build": "tsc",
+    "postbuild": "cp index.d.ts ./dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@btyx/rpc-base": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "@types/wechat-miniprogram": "^3.4.1",
+    "jest": "^29.3.1",
+    "jest-junit": "^14.0.1",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3"
+  }
+}

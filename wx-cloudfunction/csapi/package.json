@@ -1,0 +1,15 @@
+{
+  "name": "csapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3",
+    "@grpc/grpc-js": "~1.7.3"
+  }
+}

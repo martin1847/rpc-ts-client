@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tmp-envoy
+  labels:
+    app: tmp-envoy
+    revision: 1.0.0
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 8080
+    name: http
+    nodePort: 30080
+  selector:
+    app: tmp-envoy
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tmp-envoy
+    revision: 1.0.0
+  name: tmp-envoy
+spec:
+  selector:
+    matchLabels:
+      app: tmp-envoy
+  replicas: 1
+  template:
+    metadata:
+      annotations: 
+        sidecar.istio.io/inject: "true"
+      labels:
+        app: tmp-envoy
+    spec:
+      containers:
+        - name: tmp-envoy
+          image: jcr.botaoyx.com/img/example/envoy:tmp  
+          imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 8080
+

@@ -1,0 +1,57 @@
+{
+  "name": "@btyx/rpc-node",
+  "version": "1.0.4",
+  "description": "gRPC client for NodeJs",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest --coverage --ci --reporters=default --reporters=jest-junit --detectOpenHandles",
+    "format": "prettier --write \"src/**/*.*s\"",
+    "lint": "eslint src/**/*.ts --fix",
+    "prebuild": "npm run lint",
+    "build:tsc": "tsc",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "localTest": "npm run build && jest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rpc",
+    "rpc-node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.4.3",
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.4.3",
+    "jest-junit": "^15.0.0",
+    "prettier": "^2.8.4",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.0.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@btyx/rpc-base": "^1.0.3",
+    "@grpc/grpc-js": "^1.8.13",
+    "class-validator": "^0.13.2"
+  },
+  "directories": {
+    "example": "example"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "bt-rpc-base",
+  "version": "1.0.0",
+  "description": "RPC base interface, just interface & utils , no impl, no dependencies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "format": "prettier --write \"src/**/*.*s\"",
+    "prebuild": "npm run format",
+    "build": "tsc  -p ./tsconfig.nocomments.json",
+    "postbuild": "tsc && copyfiles -u 1 dist.d/index.d.ts dist/",
+    "test": "jest --coverage --ci --reporters=default --reporters=jest-junit --detectOpenHandles"
+  },
+  "keywords": [
+    "grpc",
+    "bt-rpc-base"
+  ],
+  "author": "martin.cong",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@jest/globals": "^29.6.2",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^20.4.8",
+    "copyfiles": "^2.4.1",
+    "jest": "^27.5.1",
+    "jest-junit": "^13.0.0",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<script type="module">
+  async function init() {
+    const { instance } = await WebAssembly.instantiateStreaming(
+      fetch("./base64.wasm")
+    );
+    console.log(instance.exports.Base64encode);
+    console.log(instance.exports);
+  }
+  init();
+</script>

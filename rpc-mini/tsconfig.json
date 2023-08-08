@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "ES5",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "lib": ["ES2020"],//,"dom"
+    // "types": ["miniprogram-api-typings"],
+    //https://www.npmjs.com/package/miniprogram-api-typings
+    // "typeRoots": [
+    //   "./typings"
+    // ],
+    "outDir": "./dist",  
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/__tests__/*","base64"]
+}

@@ -1,0 +1,16 @@
+{
+  //https://github.com/tsconfig/bases#node-lts--esm--strictest-tsconfigjson
+  "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "removeComments": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes":false,
+    "experimentalDecorators":true,
+    "declaration": true,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+

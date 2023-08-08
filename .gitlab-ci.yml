@@ -1,0 +1,45 @@
+variables:
+  WORKDIR: rpc-base
+
+include:
+  - project: 'it-devops/ci'
+    #    ref: v1.0.211130
+    file:
+      - '.yarn.yml'
+      - '.npm-pkg.yml'
+
+build:
+  extends: .yarn
+  artifacts:
+    paths:
+    - ./rpc-*/dist/
+  script:
+  - yarn install
+  - yarn build
+  after_script:
+  - echo "yarn done."
+
+jest:
+  image: "node:14"
+  stage: test
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+  #   RPC_ADDRESS: "http://tmp-envoy.example:8080"
+  dependencies:
+    - build
+  script:
+    - if [[ "${WORKDIR}" ]]; then cd $WORKDIR; fi
+    - yarn install && npm t
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - ./*/junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: ./*/coverage/cobertura-coverage.xml
+
+npm:
+  extends: .npm-pkg
+  script:
+    # - cp -r src/internal_* dist/
+    - npm publish

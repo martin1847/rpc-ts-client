@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <script type="text/javascript">
+        window.addEventListener('load', () => {
+
+            
+          document.getElementById('test-button').addEventListener('click', () => {
+
+            var _hasAccess = false;
+            var promise = document.hasStorageAccess();
+            promise.then(
+            function (hasAccess) {
+                _hasAccess = hasAccess;
+                console.log('hasAccess: ' + hasAccess);
+            },
+            function (reason) {
+                // Promise was rejected for some reason.
+                console.log('hasStorageAccess rejected: ' + reason);
+            },
+            );
+
+            if(!_hasAccess){
+                document.requestStorageAccess().then(
+                    function () {
+                    // Storage access was granted.
+                        console.log('Now we have first-party storage access!');
+                        document.cookie = "foo=bar";
+                        console.log(`document.cookie: ${document.cookie}`);
+                    },
+                    // function () {
+                    // // Storage access was denied.
+                    // console.log('error denied');
+                    // }
+                ).catch((err) => {
+                    // If there is an error obtaining storage access.
+                         console.error('Error obtaining storage access', err);
+                    });
+            }
+
+          });
+        });
+      </script>
+</head>
+<body>
+    <button id="test-button">Test CORS Cookie</button>
+</body>
+</html>

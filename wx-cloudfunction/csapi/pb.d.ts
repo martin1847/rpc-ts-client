@@ -1,0 +1,1 @@
+../../rpc-base/dist/pb.d.ts
