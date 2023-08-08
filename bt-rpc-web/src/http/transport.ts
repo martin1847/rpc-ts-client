@@ -1,6 +1,6 @@
 import { FetchReadableStreamTransport } from './fetch';
 import { XhrTransport } from './xhr';
-import { Meta } from '@btyx/rpc-base';
+import { Meta } from 'bt-rpc-base';
 
 export interface Transport {
   sendMessage(msgBytes: Uint8Array, metadata: Meta): void;

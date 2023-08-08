@@ -16,7 +16,7 @@ import {
   preproc,
   Meta,
   MethodConfig,
-} from '@btyx/rpc-base';
+} from 'bt-rpc-base';
 
 // const isDebug = false;
 function deserialize_OutputProto(buf: Buffer) {

@@ -17,7 +17,7 @@ import {
   GrpcStatusCode as Code,
   parseStatus,
   MethodConfig,
-} from '@btyx/rpc-base';
+} from 'bt-rpc-base';
 
 // const isDebug = false;
 

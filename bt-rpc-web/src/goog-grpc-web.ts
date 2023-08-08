@@ -35,7 +35,7 @@ import {
   preproc,
   Meta,
   MethodConfig,
-} from '@btyx/rpc-base';
+} from 'bt-rpc-base';
 
 const MINFO = new MethodDescriptor(
   '',

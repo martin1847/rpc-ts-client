@@ -1,4 +1,4 @@
-import { frameRequest, GrpcStatusCode as Code, Meta, parseBodyFrame, parseStatus } from '@btyx/rpc-base'; //, httpStatusToCode
+import { frameRequest, GrpcStatusCode as Code, Meta, parseBodyFrame, parseStatus } from 'bt-rpc-base'; //, httpStatusToCode
 let debug = console.debug;
 import { Transport, http1ResToMeta, makeDefaultTransport, TransportOptions } from './http/transport';
 

@@ -1,7 +1,7 @@
 {
-  "name": "@btyx/rpc-web",
-  "version": "1.0.3",
-  "description": "RPC Web client for BestULearn,fetch first then xhr",
+  "name": "bt-rpc-web",
+  "version": "1.0.0",
+  "description": "RPC Web client for bt-rpc,fetch first then xhr",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -16,11 +16,11 @@
     "localTest": "npm run build && jest --coverage"
   },
   "keywords": [
-    "rpc",
-    "rpc-web"
+    "grpc",
+    "bt-rpc-web"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "martin.cong",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@jest/globals": "^29.5.0",
     "@types/jest": "^27.0.2",
@@ -38,7 +38,7 @@
     "whatwg-fetch": "^3.6.2"
   },
   "dependencies": {
-    "@btyx/rpc-base": "^1.0.3",
+    "bt-rpc-base": "^1.0.0",
     "class-validator": "^0.13.2"
   },
   "eslintIgnore": [

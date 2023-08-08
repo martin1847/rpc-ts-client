@@ -1,4 +1,4 @@
-import { InputProto, OutputProto } from "@btyx/rpc-base";
+import { InputProto, OutputProto } from "bt-rpc-base";
 import { Base64 } from "./base64";
 
 const BYTES_PER_PAGE = 64 * 1024;

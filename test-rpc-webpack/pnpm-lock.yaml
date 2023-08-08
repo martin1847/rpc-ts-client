@@ -30,14 +30,14 @@ devDependencies:
 
 packages:
 
-  /@btyx/rpc-base@1.0.3:
-    resolution: {integrity: sha1-atOjVMqo1EE359TuIEh6mchIc/w=, tarball: https://gitlab.botaoyx.com/api/v4/projects/9/packages/npm/@btyx/rpc-base/-/@btyx/rpc-base-1.0.3.tgz}
+  /bt-rpc-base@1.0.3:
+    resolution: {integrity: sha1-atOjVMqo1EE359TuIEh6mchIc/w=, tarball: https://gitlab.botaoyx.com/api/v4/projects/9/packages/npm/bt-rpc-base/-/bt-rpc-base-1.0.3.tgz}
     dev: false
 
   /@btyx/rpc-web@1.0.0:
     resolution: {integrity: sha1-pcHWJ5iFPidUZlo2V2ELmUljMHE=, tarball: https://gitlab.botaoyx.com/api/v4/projects/9/packages/npm/@btyx/rpc-web/-/@btyx/rpc-web-1.0.0.tgz}
     dependencies:
-      '@btyx/rpc-base': 1.0.3
+      'bt-rpc-base': 1.0.3
       class-validator: registry.npmmirror.com/class-validator@0.13.2
     dev: false
 

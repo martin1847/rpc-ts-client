@@ -1,6 +1,6 @@
 import { Transport, TransportFactory, TransportOptions, http1ResToMeta } from './transport';
 let debug = console.debug;
-import { GrpcStatusCode, RpcError, Meta } from '@btyx/rpc-base';
+import { GrpcStatusCode, RpcError, Meta } from 'bt-rpc-base';
 
 export function XhrTransport(): TransportFactory {
   return (opts: TransportOptions) => new XHR(opts);

@@ -5,7 +5,7 @@ import {
   RpcResult,
   RpcError,
   MethodConfig,
-} from "@btyx/rpc-base";
+} from "bt-rpc-base";
 
 interface CallErr {
   errCode: number;

@@ -20,7 +20,7 @@ import {
   toResult,
   setToken,
   MethodConfig,
-} from "@btyx/rpc-base";
+} from "bt-rpc-base";
 
 import { base64encode, base64decode } from "./base64";
 

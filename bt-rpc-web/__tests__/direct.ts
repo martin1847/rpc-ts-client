@@ -5,7 +5,7 @@ import { RpcClient } from '../src/index';
 // const { JSDOM } = require("jsdom");
 import { describe, test,expect,it,jest } from '@jest/globals';
 
-import { RpcError,GrpcStatusCode } from '@btyx/rpc-base';
+import { RpcError,GrpcStatusCode } from 'bt-rpc-base';
 import {DemoService} from '../example/demo-service';
 import {APP,TimeReq} from '../example/demo-java-server-dto';
 

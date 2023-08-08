@@ -1,6 +1,6 @@
 // @ ts-nocheck
 
-import { Meta } from '@btyx/rpc-base';
+import { Meta } from 'bt-rpc-base';
 import { Transport, TransportFactory, TransportOptions } from './transport';
 let debug = console.debug;
 

@@ -47,7 +47,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@btyx/rpc-base": "^1.0.3",
+    "bt-rpc-base": "^1.0.3",
     "@grpc/grpc-js": "^1.8.13",
     "class-validator": "^0.13.2"
   },

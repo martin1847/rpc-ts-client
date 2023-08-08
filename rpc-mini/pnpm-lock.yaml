@@ -1,7 +1,7 @@
 lockfileVersion: '6.0'
 
 dependencies:
-  '@btyx/rpc-base':
+  'bt-rpc-base':
     specifier: ^1.0.3
     version: 1.0.3
 
@@ -27,8 +27,8 @@ devDependencies:
 
 packages:
 
-  /@btyx/rpc-base@1.0.3:
-    resolution: {integrity: sha1-atOjVMqo1EE359TuIEh6mchIc/w=, tarball: https://gitlab.botaoyx.com/api/v4/projects/9/packages/npm/@btyx/rpc-base/-/@btyx/rpc-base-1.0.3.tgz}
+  /bt-rpc-base@1.0.3:
+    resolution: {integrity: sha1-atOjVMqo1EE359TuIEh6mchIc/w=, tarball: https://gitlab.botaoyx.com/api/v4/projects/9/packages/npm/bt-rpc-base/-/bt-rpc-base-1.0.3.tgz}
     dev: false
 
   registry.npmmirror.com/@ampproject/remapping@2.2.0:
