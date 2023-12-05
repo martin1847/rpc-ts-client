@@ -3,11 +3,11 @@ import * as $ from 'jquery';
 
 //import {RpcResult,RpcService} from './rpc/index';
 import {RpcResult,RpcService,Meta} from 'bt-rpc-base';
-import {RpcClient} from '@btyx/rpc-web';
+import {RpcClient} from 'bt-rpc-web';
 
 
-import {setDefaultTransportFactory} from '@btyx/rpc-web/dist/http/transport';
-import {XhrTransport} from '@btyx/rpc-web/dist/http/xhr';
+import {setDefaultTransportFactory} from 'bt-rpc-web/dist/http/transport';
+import {XhrTransport} from 'bt-rpc-web/dist/http/xhr';
 
 
 import {

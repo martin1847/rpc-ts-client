@@ -9,5 +9,7 @@
 ```ts
 import {RpcClient} from "bt-rpc-web"
 
+// 切换传输，全局优先执行
+setDefaultTransportFactory(XhrTransport())
 ```
 

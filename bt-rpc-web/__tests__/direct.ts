@@ -18,7 +18,9 @@ import {APP,TimeReq} from '../example/demo-java-server-dto';
 
 const cId = "tsrpc-1234xxxxx";
 const demoApp = RpcClient.create({
-    host:'https://example.testbtyxapi.com', 
+    // host:'https://example.testbtyxapi.com', 
+    // host:'https://idemo.wangyuedaojia.com:4430', 
+    host:'https://idemo.wangyuedaojia.com', 
     app:APP,
     withCredentials:true,
      // use https://github.com/fingerprintjs/fingerprintjs
