@@ -7,7 +7,7 @@
 // @ ts-nocheck
 import { describe, test,expect,it } from '@jest/globals';
 
-import {RpcResult,PagedQuery,Meta,RpcError} from 'bt-rpc-base';
+import {RpcResult,PagedQuery,Meta,RpcError} from 'krpc-base';
 import { RpcClient } from '../src/index';
 // import { RpcClient } from '../src/goog-grpc-web';
 

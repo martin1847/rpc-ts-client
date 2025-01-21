@@ -1,6 +1,6 @@
 import { FetchReadableStreamTransport } from './fetch';
 import { XhrTransport } from './xhr';
-import { Meta } from 'bt-rpc-base';
+import { Meta } from 'krpc-base';
 
 export interface Transport {
   sendMessage(msgBytes: Uint8Array, metadata: Meta): void;
@@ -43,7 +43,7 @@ export function fetchFirstFactory(): TransportFactory {
 function detectFetchSupport(): boolean {
   var res =
     typeof fetch === 'function' && typeof Response !== 'undefined' && Response.prototype.hasOwnProperty('arrayBuffer');
-  // console.log('fetch support => ' + res);
+  console.info('[[[ fetch ]]] support => ' + res);
   // var r2 =  && typeof Headers === 'function';
   // console.log("fetch support => " + r2)
   return res;

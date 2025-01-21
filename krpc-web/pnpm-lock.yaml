@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  bt-rpc-base:
+  krpc-base:
     specifier: ^1.0.0
     version: 1.0.0
   class-validator:
@@ -1053,7 +1053,7 @@ packages:
       node-int64: 0.4.0
     dev: true
 
-  /bt-rpc-base@1.0.0:
+  /krpc-base@1.0.0:
     resolution: {integrity: sha512-qfWHBSzsIbB9WUUWZocTMG4LVp8siyrR4mcOFgQQATFeEBjiH/u5Wh+tppLdjFo7dOiPgRXI/wagjn8CFc1l5w==}
     dev: false
 

@@ -1,4 +1,4 @@
-import { ServiceConfig, RpcService } from 'bt-rpc-base';
+import { ServiceConfig, RpcService } from 'krpc-base';
 
 declare class RpcClient {
     static create(c: ServiceConfig): RpcService;

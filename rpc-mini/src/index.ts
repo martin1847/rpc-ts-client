@@ -20,7 +20,7 @@ import {
   toResult,
   setToken,
   MethodConfig,
-} from "bt-rpc-base";
+} from "krpc-base";
 
 import { base64encode, base64decode } from "./base64";
 

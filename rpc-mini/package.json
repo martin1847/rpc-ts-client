@@ -17,7 +17,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "bt-rpc-base": "^1.0.3"
+    "krpc-base": "^1.0.3"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",

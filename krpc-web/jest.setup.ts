@@ -7,3 +7,4 @@ global['TextDecoder'] = global['TextDecoder'] || TextDecoder;
 import 'whatwg-fetch'
 
 
+console.info('[[[ jest.setup ]]]  ' );

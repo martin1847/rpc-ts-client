@@ -24,7 +24,7 @@ IDE : Tools -> Build npm
  
 ```ts
 // pages/index/index.ts
-import {RpcResult,ServiceConfig,RpcService} from "bt-rpc-base"
+import {RpcResult,ServiceConfig,RpcService} from "krpc-base"
 // 云函数版本
 // import {CloudRpcClient as  RpcClient} from "@btyx/rpc-mini"
 import {RpcClient} from "@btyx/rpc-mini"

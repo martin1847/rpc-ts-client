@@ -35,7 +35,7 @@ import {
   preproc,
   Meta,
   MethodConfig,
-} from 'bt-rpc-base';
+} from 'krpc-base';
 
 const MINFO = new MethodDescriptor(
   '',

@@ -1,7 +1,7 @@
 {
-  "name": "bt-rpc-base",
+  "name": "krpc-base",
   "version": "1.0.0",
-  "description": "RPC base interface, just interface & utils , no impl, no dependencies",
+  "description": "KRPC base interface, just interface & utils , no impl, no dependencies",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -16,20 +16,20 @@
   },
   "keywords": [
     "grpc",
-    "bt-rpc-base"
+    "krpc-base"
   ],
   "author": "martin.cong",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@jest/globals": "^29.6.2",
-    "@tsconfig/recommended": "^1.0.1",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^20.4.8",
+    "@jest/globals": "^29.7.0",
+    "@tsconfig/recommended": "^1.0.8",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^20.17.14",
     "copyfiles": "^2.4.1",
     "jest": "^27.5.1",
-    "jest-junit": "^13.0.0",
-    "prettier": "^2.4.1",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
+    "jest-junit": "^13.2.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^27.1.5",
+    "typescript": "^5.7.3"
   }
 }

@@ -5,7 +5,7 @@ import {
   RpcResult,
   RpcError,
   MethodConfig,
-} from "bt-rpc-base";
+} from "krpc-base";
 
 interface CallErr {
   errCode: number;

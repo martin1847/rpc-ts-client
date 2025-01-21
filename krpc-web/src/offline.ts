@@ -7,7 +7,7 @@ import {
   preproc,
   GrpcStatusCode,
   MethodConfig,
-} from 'bt-rpc-base';
+} from 'krpc-base';
 
 // const isDebug = false;
 type DataOfRpcResult = any;

@@ -2,7 +2,7 @@
 import * as $ from 'jquery';
 
 //import {RpcResult,RpcService} from './rpc/index';
-import {RpcResult,RpcService,Meta} from 'bt-rpc-base';
+import {RpcResult,RpcService,Meta} from 'krpc-base';
 import {RpcClient} from 'bt-rpc-web';
 
 

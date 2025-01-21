@@ -17,7 +17,7 @@ import {
   GrpcStatusCode as Code,
   parseStatus,
   MethodConfig,
-} from 'bt-rpc-base';
+} from 'krpc-base';
 
 // const isDebug = false;
 

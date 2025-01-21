@@ -16,7 +16,7 @@ import {
   preproc,
   Meta,
   MethodConfig,
-} from 'bt-rpc-base';
+} from 'krpc-base';
 
 // const isDebug = false;
 function deserialize_OutputProto(buf: Buffer) {
