@@ -43,7 +43,7 @@ export function fetchFirstFactory(): TransportFactory {
 function detectFetchSupport(): boolean {
   var res =
     typeof fetch === 'function' && typeof Response !== 'undefined' && Response.prototype.hasOwnProperty('arrayBuffer');
-  console.info('[[[ fetch ]]] support => ' + res);
+  // console.info('[[[ fetch ]]] support => ' + res);
   // var r2 =  && typeof Headers === 'function';
   // console.log("fetch support => " + r2)
   return res;

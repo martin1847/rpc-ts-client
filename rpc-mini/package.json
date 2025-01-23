@@ -1,7 +1,7 @@
 {
-  "name": "@btyx/rpc-mini",
-  "version": "1.0.3",
-  "description": "RPC client for miniprogram, use wx.request(text base64) or cloud function",
+  "name": "krpc-mini",
+  "version": "1.0.0",
+  "description": "KRPC client for weChat miniprogram, use wx.request(text base64) or cloud function",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -17,7 +17,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "krpc-base": "^1.0.3"
+    "krpc-base": "^1.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
