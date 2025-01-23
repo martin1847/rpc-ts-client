@@ -3,7 +3,7 @@
 import * as grpcWeb from 'grpc-web';
 import { RpcClient } from '../src/index';
 // const { JSDOM } = require("jsdom");
-import { describe, test,expect,it,jest } from '@jest/globals';
+import { describe, test,expect,it,jest } from 'bun:test';//@jest/globals';
 
 import { RpcError,GrpcStatusCode } from 'krpc-base';
 import {DemoService} from '../example/demo-service';

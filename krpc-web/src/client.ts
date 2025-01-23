@@ -166,6 +166,9 @@ export class GrpcClient {
     //   throw new Error('Message already sent for non-client-streaming method - cannot .send()');
     // }
     // this.sentFirstMessage = true;
+
+    // console.info(`[[[ send ]]] header =>  ${JSON.stringify(header)}`);
+
     this.transport.sendMessage(frameRequest(msg.serializeBinary()), header);
   }
 

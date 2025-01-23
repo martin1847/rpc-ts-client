@@ -1,0 +1,21 @@
+[0m[1mbun test [0m[2mv1.1.43 (76800b04)[0m
+[[[ happy.dom.setup ]]]  
+[[[ fetch ]]] support => false
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+dump error in catch promise: {"code":400}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+dump error in catch promise: {"code":2}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+[[[ send ]]] header =>  {"c-id":"tsrpc-1234xxxxx","content-type":"application/grpc-web+proto","x-grpc-web":"1"}
+request closed
+wait a 2s
