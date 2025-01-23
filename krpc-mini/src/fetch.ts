@@ -1,5 +1,5 @@
-// / <reference path="../node_modules/miniprogram-api-typings/index.d.ts" />
-// import 'miniprogram-api-typings';
+///// <reference path="../node_modules/miniprogram-api-typings/index.d.ts" />
+// import "miniprogram-api-typings";
 export interface SuccResp {
   cookies: string[];
   data?: string;
@@ -15,7 +15,7 @@ export function fetch(
   onSuccess: (resp: SuccResp) => void,
   onFail: (err: WechatMiniprogram.Err) => void,
   timeoutMill?: number,
-  method: "OPTIONS" | "GET" | "HEAD" | "POST" = "POST"
+  method: "OPTIONS" | "GET" | "HEAD" | "POST" = "POST",
 ): void {
   wx.request({
     url: url,

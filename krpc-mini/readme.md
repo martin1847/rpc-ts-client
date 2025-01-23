@@ -7,7 +7,7 @@
 ```json
 {
     "dependencies": {
-        "@btyx/rpc-mini":"~1.0.0"
+        "krpc-mini":"~1.0.0"
     }
 }
 ```
@@ -26,13 +26,13 @@ IDE : Tools -> Build npm
 // pages/index/index.ts
 import {RpcResult,ServiceConfig,RpcService} from "krpc-base"
 // 云函数版本
-// import {CloudRpcClient as  RpcClient} from "@btyx/rpc-mini"
-import {RpcClient} from "@btyx/rpc-mini"
+// import {CloudRpcClient as  RpcClient} from "krpc-mini"
+import {RpcClient} from "krpc-mini"
 
 
 var name = "hello wx!";
 var rpcService : RpcService = RpcClient.create({
-    host: "https://example.testbtyxapi.com",
+    host: "https://idemo.krpc.com",
     app: "demo-java-server",
     clientId: "m-youruuinon-id",
     //accessToken: "" 可选，需要登录的接口
@@ -60,7 +60,7 @@ rpcService.async("Demo/hello",{"name":name,"age":123})
 
 ```bash 
 # 也可利用curl直接模拟grpc-web-text传输
-curl 'https://example.testbtyxapi.com/demo-java-server/M/h' \
+curl 'https://example.krpc.com/demo-java-server/M/h' \
     -H 'accept: application/grpc-web-text' \
     -H 'c-id: m-youruuinon-id' \
     -H 'content-type: application/grpc-web-text' \
@@ -71,7 +71,7 @@ https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.
 
 ```js
 wx.request({
-  url: 'https://course.prebtyxapi.com/course/M/v', 
+  url: 'https://course.krpc.com/course/M/v', 
   method:'POST',
   responseType:'arraybuffer',
   enableHttp2:true,
@@ -89,7 +89,7 @@ wx.request({
 
 //只支持文本请求
 wx.request({
-  url: 'https://course.prebtyxapi.com/course/M/v', 
+  url: 'https://course.krpc.com/course/M/v', 
   method:'POST',
   enableHttp2:true,
   data: 'AAAAAAISAA==',

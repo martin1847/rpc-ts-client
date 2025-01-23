@@ -25,7 +25,7 @@ class CloudRpcClient implements RpcService {
     appPath: string,
     tokenProvider?: () => string,
     exceptionHandler?: ExceptionHandler,
-    timeoutMill?: number
+    timeoutMill?: number,
   ) {
     this.pathPrefix_ = appPath;
     this.exceptionHandler_ = exceptionHandler;
@@ -35,7 +35,7 @@ class CloudRpcClient implements RpcService {
   async<DTO>(
     method: string,
     param?: any,
-    cfg?: MethodConfig
+    cfg?: MethodConfig,
   ): Promise<RpcResult<DTO>> {
     // 云函数调用忽略自定义header
 
@@ -77,7 +77,7 @@ export class RpcClient {
       path,
       c.tokenProvider,
       c.exceptionHandler,
-      c.timeoutMill
+      c.timeoutMill,
     );
   }
 }

@@ -50,7 +50,7 @@ class GrpcWebTextClient implements RpcService {
     headers: Meta,
     tokenProvider?: () => string,
     exceptionHandler?: ExceptionHandler,
-    timeoutMill?: number
+    timeoutMill?: number,
   ) {
     this.pathPrefix_ = httpHost + appPath;
     this.headers_ = headers;
@@ -66,7 +66,7 @@ class GrpcWebTextClient implements RpcService {
   async<DTO>(
     method: string,
     param?: any,
-    cfg?: MethodConfig
+    cfg?: MethodConfig,
   ): Promise<RpcResult<DTO>> {
     let fullUrl = this.pathPrefix_ + method;
     let input = new InputProto();
@@ -102,8 +102,8 @@ class GrpcWebTextClient implements RpcService {
             reject(
               new RpcError(
                 GrpcStatusCode.DATA_LOSS,
-                "invalid response,no body or grpc-status found!"
-              )
+                "invalid response,no body or grpc-status found!",
+              ),
             );
           }
         },
@@ -114,10 +114,10 @@ class GrpcWebTextClient implements RpcService {
                 (err.errMsg?.endsWith("timeout")
                   ? GrpcStatusCode.DEADLINE_EXCEEDED
                   : GrpcStatusCode.UNKNOWN),
-              err.errMsg
-            )
+              err.errMsg,
+            ),
           ),
-        tms
+        tms,
       );
     }).catch(cfg?.exceptionHandler || this.exceptionHandler_) as any;
   }
@@ -132,7 +132,7 @@ export class RpcClient {
       headers,
       c.tokenProvider,
       c.exceptionHandler,
-      c.timeoutMill
+      c.timeoutMill,
     );
   }
 }
