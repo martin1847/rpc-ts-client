@@ -114,7 +114,7 @@ it('OutputProto.deserializeBinary', () => {
 it('Empty Input shule be AAAAAAISAA== ', () => {
     expect(param2b64()).toBe('AAAAAAISAA==')
 
-    console.log("curl https://example.testbtyxapi.com/demo-java-server/M/h \
+    console.log("curl https://idemo.wangyuedaojia.com/demo-java-server/M/h \
     -H 'accept: application/grpc-web-text' \
     -H 'content-type: application/grpc-web-text' \
     -d 'AAAAAAISAA=='")
