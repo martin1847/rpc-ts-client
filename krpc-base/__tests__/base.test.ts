@@ -6,8 +6,8 @@ import {frameRequest, parseBodyFrame} from '../src/grpc-web-format'
 import {InputProto, OutputProto} from '../src/pb'
 import {mergeHeader, toResult} from '../src/util'
 import { createHash } from 'crypto';
-import { describe, test,expect,it } from '@jest/globals';
-import { TextEncoder, TextDecoder } from 'util'
+import { describe, test,expect,it } from 'bun:test';//'@jest/globals';
+import { TextEncoder, TextDecoder } from 'util';
 
 
 
