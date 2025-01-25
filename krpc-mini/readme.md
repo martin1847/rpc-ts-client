@@ -32,7 +32,7 @@ import {RpcClient} from "krpc-mini"
 
 var name = "hello wx!";
 var rpcService : RpcService = RpcClient.create({
-    host: "https://idemo.krpc.com",
+    host: "https://idemo.krpc.tech",
     app: "demo-java-server",
     clientId: "m-youruuinon-id",
     //accessToken: "" 可选，需要登录的接口
@@ -60,7 +60,7 @@ rpcService.async("Demo/hello",{"name":name,"age":123})
 
 ```bash 
 # 也可利用curl直接模拟grpc-web-text传输
-curl 'https://example.krpc.com/demo-java-server/M/h' \
+curl 'https://example.krpc.tech/demo-java-server/M/h' \
     -H 'accept: application/grpc-web-text' \
     -H 'c-id: m-youruuinon-id' \
     -H 'content-type: application/grpc-web-text' \
@@ -71,7 +71,7 @@ https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.
 
 ```js
 wx.request({
-  url: 'https://course.krpc.com/course/M/v', 
+  url: 'https://course.krpc.tech/course/M/v', 
   method:'POST',
   responseType:'arraybuffer',
   enableHttp2:true,
@@ -89,7 +89,7 @@ wx.request({
 
 //只支持文本请求
 wx.request({
-  url: 'https://course.krpc.com/course/M/v', 
+  url: 'https://course.krpc.tech/course/M/v', 
   method:'POST',
   enableHttp2:true,
   data: 'AAAAAAISAA==',

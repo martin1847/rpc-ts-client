@@ -2,7 +2,7 @@
 
 import { RpcClient } from '../src/index';
 // const { JSDOM } = require("jsdom");
-import { describe, test,expect,it,jest } from '@jest/globals';
+import { describe, test,expect,it,jest } from 'bun:test';//@jest/globals';
 
 import { RpcError,GrpcStatusCode } from 'krpc-base';
 import {DemoService} from '../example/demo-service';
@@ -17,43 +17,16 @@ import {APP,TimeReq} from '../example/demo-java-server-dto';
 
 const cId = "tsrpc-1234xxxxx";
 const demoApp = RpcClient.create({
-    host:'https://example.testbtyxapi.com', 
+    // host:'https://idemo.wangyuedaojia.com:4430', 
+    host:'https://idemo.wangyuedaojia.com', 
     app:APP,
     withCredentials:true,
      // use https://github.com/fingerprintjs/fingerprintjs
     headers:{"c-id":cId }
 });
 
-// if (!globalThis.fetch) {
-//     globalThis.fetch = require("node-fetch");
-// }
-// if (!globalThis.Headers) {
-//     globalThis.Headers = require("node-fetch").Headers;
-// }
-// if (!globalThis.Response) {
-//     globalThis.Response = require("node-fetch").Response;
-// }
-// if (!globalThis.Request) {
-//     globalThis.Request = require("node-fetch").Request;
-// }
-// if (!globalThis.DOMException) {
-//     // @ts-ignore
-//     globalThis.DOMException = class DOMException extends Error {
-//         name = 'DOMException';
-
-//         constructor(message?: string, name?: string) {
-//             super(message);
-//             // see https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html#example
-//             Object.setPrototypeOf(this, new.target.prototype);
-//             if (name) 
-//                 this.name = name;
-//         }
-//     }
-// }
-
 
 const demoService = new DemoService(demoApp);
-
 
 var nameTooLong = "name toooooooooooooooo  long";
 nameTooLong+=nameTooLong;
@@ -90,7 +63,7 @@ it('[ param too long INVALID_ARGUMENT'  , () => {
 });
 
 const demoAppTimeOut = RpcClient.create({
-    host:'https://example.testbtyxapi.com', 
+    host:'https://example.wangyuefake.com', 
     app:APP,
     withCredentials:true,
      // use https://github.com/fingerprintjs/fingerprintjs
@@ -115,13 +88,4 @@ it('wait a 2s', async () => {
     expect(foo).toBeDefined();
     console.log("wait a 2s")
 });
-// setTimeout(()=>console.log("wait a monthe"),1500)
-
-//const RPC_ADDRESS = process.env.RPC_ADDRESS || '127.0.0.1:50051' ;
-
-// const RPC_ADDRESS = process.env.RPC_ADDRESS || 'https://example.testbtyxapi.com';
-// console.log("use RPC address : " + RPC_ADDRESS);
-
-//TODO first error
-//jest.setTimeout(10000)
 

@@ -7,5 +7,6 @@ globalThis['TextDecoder'] = globalThis['TextDecoder'] || TextDecoder;
 import type { ClientOptions } from '@grpc/grpc-js';
 
 import { RpcClient } from './client';
-export { RpcClient, ClientOptions };
+export { RpcClient };
+export type { ClientOptions };
 export default RpcClient;

@@ -1,5 +1,5 @@
 
-微信云函数rpc函数
+微信云函数krpc函数
 
 
 ## 依赖rpc-base/dist/pb.js
@@ -12,12 +12,9 @@ ln -s ../../rpc-base/dist/pb.* .
 
 ## 调用方式
 
-使用方法参考： 
-https://gitlab.botaoyx.com/middleware/btyx-rpc-ts-client/-/tree/master/rpc-mini
-
 ```ts
 // 云函数版本
-import {CloudRpcClient as  RpcClient} from "@btyx/rpc-mini"
+import {CloudRpcClient as  RpcClient} from "krpc-mini"
 ```
 
 核心用微信云函数`wx.cloud.callFunction`：做了个封装

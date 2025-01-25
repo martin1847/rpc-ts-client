@@ -150,7 +150,7 @@ class EchoApp {
 
 RpcClient.debug = 0;
 const serviceBase =RpcClient.create({
-    host:'https://course.testbtyxapi.com', 
+    host:'https://idemo.krpc.tech', 
     app:"auth",
     withCredentials:true,
     clientId:"c-unused-web-test2",

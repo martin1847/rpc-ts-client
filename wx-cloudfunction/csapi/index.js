@@ -8,7 +8,7 @@ cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV }) // 使用当前云环境
 
 
 const client = new grpc.Client(
-  "course.btyxapi.com",
+  "idemo.krpc.tech",
   grpc.ChannelCredentials.createFromSecureContext(tls.createSecureContext())
 );
 

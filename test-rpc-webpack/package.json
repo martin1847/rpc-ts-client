@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "bt-rpc-web": "^1.0.0",
+    "krpc-web": "^1.0.0",
     "jquery": "^3.6.1"
   },
   "devDependencies": {

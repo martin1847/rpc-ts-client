@@ -4,8 +4,9 @@
 /* tslint:disable:max-classes-per-file */
 /* tslint:disable:no-string-literal */
 
+
 // @ ts-nocheck
-import { describe, test,expect,it } from '@jest/globals';
+import { describe, test,expect,it } from 'bun:test';
 
 import {RpcResult,PagedQuery,Meta,RpcError} from 'krpc-base';
 import { RpcClient } from '../src/index';
@@ -17,7 +18,8 @@ import {APP,TimeReq,TimeResult, User,UserStatus} from '../example/demo-java-serv
 
 const cId = "tsrpc-1234xxxxx";
 const demoApp = RpcClient.create({
-    host:'https://example.testbtyxapi.com', 
+    // host:'https://idemo.wangyuedaojia.com:4430',  
+    host:'https://idemo.wangyuedaojia.com', 
     app:APP,
     withCredentials:true,
     clientId : cId
@@ -96,7 +98,7 @@ it('plistUser: ' , () => {
     req.page = 1;
     return demoService.plistUser(req).then(res => {
         console.log(JSON.stringify(res.data))
-        expect(res.data.data[0]!.name).toBe(user.name );
+        expect(res.data.data[0].name).toBe(user.name );
         
     });
 });
@@ -104,7 +106,7 @@ it('plistUser: ' , () => {
 it('listUser: ' , () => {
     return demoService.listUser([user]).then(res => {
         console.log(JSON.stringify(res.data))
-        expect(res.data[0]!.name).toBe(user.name );
+        expect(res.data[0].name).toBe(user.name );
     });
 });
 

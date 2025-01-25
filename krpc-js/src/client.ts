@@ -1,21 +1,21 @@
 import { validateSync } from 'class-validator';
 
-import { Client, ChannelCredentials, Metadata, CallOptions, ClientOptions } from '@grpc/grpc-js';
+import { Client, ChannelCredentials, Metadata, type CallOptions, type ClientOptions } from '@grpc/grpc-js';
 import { createSecureContext } from 'tls';
 
 import {
   InputProto,
   OutputProto,
-  ExceptionHandler,
-  ServiceConfig,
-  RpcService,
+  type ExceptionHandler,
+  type ServiceConfig,
+  type RpcService,
   RpcError,
-  RpcResult,
+  type RpcResult,
   mergeHeader,
   toResult,
   preproc,
-  Meta,
-  MethodConfig,
+  type Meta,
+  type MethodConfig,
 } from 'krpc-base';
 
 // const isDebug = false;
@@ -59,7 +59,7 @@ class NodeClient implements RpcService {
     }
 
     // if(debug){
-    //   console.log(`rpcurl https://example.testbtyxapi.com${this.pathPrefix_ + method} -d '${pjson}'`)
+    //   console.log(`rpcurl https://example.krpc.tech${this.pathPrefix_ + method} -d '${pjson}'`)
     // }
     // const deadline = new Date();
     // deadline.setSeconds(deadline.getSeconds() + 20);
