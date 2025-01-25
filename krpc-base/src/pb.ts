@@ -280,7 +280,8 @@ export class OutputProto {
         }
         break;
       case WireType.Bit64:
-        this.pos += 4;
+        this.pos += 8;
+        break;
       case WireType.Bit32:
         this.pos += 4;
         break;
